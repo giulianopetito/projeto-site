@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+:root {
+    --fontedestaque: 'Patua One', cursive;
+    --fontetitulos: 'Roboto Slab', serif;
+    --fontetextos: 'Oswald', sans-serif;
+
+    --cor01: #447FE6;
+    --cor02: #0757E0;
+    --cor03: #344561;
+    --cor04: #0543AD;
+    --cor05: #032561;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(179, 230, 250);
+}
+
+header {
+    background-image: linear-gradient(to top, var(--cor05) , var(--cor04));
+    padding-bottom: 120px;
+    padding-top: 50px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-family: var(--fontedestaque);
+    padding-bottom: 20px;
+    font-variant: small-caps;
+    text-shadow: 2px 2px 2px #110f2c50;
+
+}
+
+header p {
+    font-family: var(--fontetitulos);
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+nav {
+    background-color: var(--cor05);
+}
+
+nav a {
+    display: inline-block;
+    padding: 7px;
+    margin: 5px;
+    font-size: 14px;
+    color: var(--cor01);
+}
+
+nav a:hover{
+    background-color: var(--cor01);
+    color: var(--cor05);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.356);
+}
+
+#img01 {
+    background-image: url('../imagens/imagem-abstrata.jpg');
+    background-position: left center;
+    background-size: cover;
+}
