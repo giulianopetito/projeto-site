@@ -21,8 +21,9 @@
     margin: 0px;
 }
 
-body {
-    background-color: rgb(179, 230, 250);
+html, body {
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
 }
 
 header {
@@ -46,12 +47,6 @@ header p {
     font-weight: bold;
 }
 
-a {
-    text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-}
-
 nav {
     background-color: var(--cor05);
 }
@@ -62,6 +57,9 @@ nav a {
     margin: 5px;
     font-size: 14px;
     color: var(--cor01);
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
 }
 
 nav a:hover{
@@ -71,8 +69,64 @@ nav a:hover{
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.356);
 }
 
-#img01 {
-    background-image: url('../imagens/imagem-abstrata.jpg');
-    background-position: left center;
+.imagem {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
     background-size: cover;
+    padding-bottom: 50vh;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #90b6f79f;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+section > p > a {
+    background-color: var(--cor01);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: var(--fontetextos);
+    font-weight: 500;
+    color: var(--cor05);
+    padding-left: 5px;
+    padding-right: 5px;
+    content: /&#x1F517;;
+}
+
+section > p > a:hover {
+    text-decoration: underline;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.37);
+}
+
+section {
+    padding-top: 10px;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 2vw;
+}
+
+section#img01 {
+    background-image: url(../imagens/pexels-garrett-morrow-682933.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+
+section p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    padding: 10px;
+    text-indent: 20px;
+    text-align: justify;
+    line-height: 1.5em;
+    margin-bottom: 40px;
 }
