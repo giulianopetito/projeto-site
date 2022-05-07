@@ -45,6 +45,7 @@ header h1 {
 header p {
     font-family: var(--fontetitulos);
     font-weight: bold;
+    text-shadow: 2px 2px 2px #110f2c50;
 }
 
 nav {
@@ -89,8 +90,11 @@ main {
     border-bottom-right-radius: 10px;
 }
 
-section > p > a {
-    background-color: var(--cor01);
+a.externo::after  {
+    content: '\00A0\1F517'
+}
+
+.externo {
     text-decoration: none;
     font-weight: bold;
     font-family: var(--fontetextos);
@@ -98,7 +102,6 @@ section > p > a {
     color: var(--cor05);
     padding-left: 5px;
     padding-right: 5px;
-    content: /&#x1F517;;
 }
 
 section > p > a:hover {
@@ -123,7 +126,6 @@ section#img01 {
 
 section p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 500;
     padding: 10px;
     text-indent: 20px;
     text-align: justify;
