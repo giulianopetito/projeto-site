@@ -26,17 +26,21 @@ html, body {
     background-color: rgb(255, 255, 255);
 }
 
+body {
+    background-color: rgba(135, 207, 248, 0.37);
+}
+
 header {
     background-image: linear-gradient(to top, var(--cor05) , var(--cor04));
     padding-bottom: 120px;
-    padding-top: 50px;
+    padding-top: 120px;
     text-align: center;
     color: white;
 }
 
 header h1 {
     font-family: var(--fontedestaque);
-    padding-bottom: 20px;
+    padding-bottom: 5px;
     font-variant: small-caps;
     text-shadow: 2px 2px 2px #110f2c50;
 
@@ -79,15 +83,10 @@ nav a:hover{
 }
 
 main {
-    min-width: 300px;
-    max-width: 1000px;
-    margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     padding: 20px;
     background-color: #90b6f79f;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
 }
 
 a.externo::after  {
@@ -125,10 +124,31 @@ section#img01 {
 }
 
 section p {
+    font-size: 1em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 10px;
     text-indent: 20px;
     text-align: justify;
     line-height: 1.5em;
     margin-bottom: 40px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: var(--fontetitulos);
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.295);
 }
